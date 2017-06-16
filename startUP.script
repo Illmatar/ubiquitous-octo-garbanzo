@@ -1,0 +1,13 @@
+servers = Array['foodnstuff', 'sigma-cosmetics', 'joesguns', 'nectar-net', 'hong-fang-tea', 'harakiri-sushi', 'neo-net', 'zer0', 'max-hardware', 'iron-gym', 'phantasy', 'silver-helix', 'omega-net', 'crush-fitness', 'johnson-ortho', 'the-hub', 'comptek', 'netlink', 'rothman-uni', 'catalyst', 'summit-uni', 'rho-construction','millenium-fitness', 'aevum-police', 'alpha-ent', 'syscore', 'lexo-corp', 'snap-fitness', 'global-pharm', 'applied-energetics', 'unitalife', 'univ-energy', 'nova-med', 'zb-def', 'zb-institute', 'vitalife', 'titan-labs', 'solaris', 'microdyne', 'helios', 'deltaone', 'icarus', 'zeud-med', 'omnia', 'defcomm', 'galactic-cyber', 'infocomm', 'taiyang-digital', 'stormtech', 'aerocorp', 'clarkeinc', 'omnitek', 'nwo', '4sigma', 'blade', 'b-and-a', 'ecorp', 'fulcrumtech', 'megacorp', 'kuai-gong', 'fulcrumassets', 'powerhouse-fitness'];
+
+while(true){
+    for (i = 0; i < 62; i = i + 1){
+        if (getHackingLevel() >= getServerRequiredHackingLevel(servers[i]) && (false == hasRootAccess(servers[i]))){
+            if(fileExists('brutessh.exe')) {brutessh(servers[i])};
+            if(fileExists('ftpcrack.exe')) {ftpcrack(servers[i])};
+            nuke(servers[i]);
+            scp('growAll.script', servers[i]);
+            exec('growAll.script', servers[i], 2);
+        };
+    };
+}
