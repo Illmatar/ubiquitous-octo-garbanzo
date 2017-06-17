@@ -1,0 +1,18 @@
+maxlvl = 71;
+maxRam = 4;
+while(true){
+    length = hacknetnodes.length;
+    for(i = 0; i < length; i = i + 1){
+        if(hacknetnodes[i].level < maxlvl){
+            for(x = 0; hacknetnodes[i].level < maxlvl;x = 0){
+                hacknetnodes[i].upgradeLevel(5);
+            };
+        };
+        if(hacknetnodes[i].ram < maxRam){
+            for(x = 0; hacknetnodes[i].ram < maxRam;x = 0){
+                hacknetnodes[i].upgradeRam();
+            };
+        };
+    };
+    purchaseHacknetNode();
+}
