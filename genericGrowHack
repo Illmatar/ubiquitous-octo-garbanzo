@@ -1,0 +1,7 @@
+while(true){
+    if (getServerMoneyAvailable(args[0]) < args[1]){
+        grow(args[0]);
+    } else {
+        hack(args[0]);
+    };
+}
