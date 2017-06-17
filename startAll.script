@@ -1,3 +1,2 @@
-run('startUP.script');
 run('startHack.script');
 run('checkAll.script');
