@@ -14,7 +14,7 @@ while(true){
             for(i = 0; i < ports[0]; i = i + 1){
                 run(hacks[i] + '.script',1,servers[0]);
             };
-            sleep(2000);
+            sleep(1500);
             nuke(servers[0]);
         };
     };
